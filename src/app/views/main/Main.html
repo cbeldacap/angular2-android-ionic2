@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      Header
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-menu [content] = "mycontent">
+  <ion-header>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-button menuClose clear>Close Menu</button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav #mycontent></ion-nav>
+
+<ion-content>
+  <h1> Hello World Angular2 + Ionic2 </h1>
+
+</ion-content>
