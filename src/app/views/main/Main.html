@@ -18,13 +18,24 @@
 
   <ion-content>
     <ion-list>
-      <button ion-button menuClose clear>Close Menu</button>
+      <ion-item>
+        <button ion-button menuClose clear>Close Menu</button>
+      </ion-item>
+      <ion-item>
+        <button ion-button clear (click)="logOut()">Log Out</button>
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
 <ion-nav #mycontent></ion-nav>
 
 <ion-content>
-  <h1> Hello World Angular2 + Ionic2 </h1>
-
+  <ion-list>
+    <entity
+      *ngFor = "let entity of data"
+      (press)="openDetails(entity)"
+      [entity] = "entity"
+      (selectEntity) = "selectEntity($event)">
+    </entity>
+  </ion-list>
 </ion-content>

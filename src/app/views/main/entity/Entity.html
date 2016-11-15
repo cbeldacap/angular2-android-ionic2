@@ -1,0 +1,19 @@
+<ion-item-sliding>
+  <ion-item>
+    <ion-avatar class = "requestAvatar" item-left>
+      <img src={{entity.img}}>
+    </ion-avatar>
+    <h2 style="white-space: normal !important"><b>{{entity.surname}}</b></h2>
+    <i style="white-space: normal !important">{{entity.name}}</i>
+  </ion-item>
+  <ion-item-options side="left">
+    <button ion-button (click)="openNavDetailsPage(inputItem)">
+      OP-LEFT
+    </button>
+  </ion-item-options>
+  <ion-item-options side="right">
+    <button ion-button>
+      OP-RIGHT
+    </button>
+  </ion-item-options>
+</ion-item-sliding>
