@@ -6,7 +6,7 @@ import { MyApp } from './app.component';
 import { MainPage } from './views/main/Main';
 import { LoginPage } from './views/login/Login';
 import { EntityComponent } from './views/main/entity/Entity';
-import { DetailsComponent } from './views/main/details/Details';
+import { EntityDetails } from './views/main/entity-detail/entity-detail.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { DetailsComponent } from './views/main/details/Details';
     MainPage,
     LoginPage,
     EntityComponent,
-    DetailsComponent
+    EntityDetails
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -26,7 +26,7 @@ import { DetailsComponent } from './views/main/details/Details';
     MainPage,
     LoginPage,
     EntityComponent,
-    DetailsComponent
+    EntityDetails
   ],
   providers: [
   ]

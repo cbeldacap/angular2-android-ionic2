@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, AlertController  } from 'ionic-angular';
 import { db } from '../../mock';
 import { LoginPage } from '../login/Login';
-import { DetailsComponent } from './details/Details';
+import { EntityDetails } from './entity-detail/entity-detail.component';
 
 @Component({
     selector: 'main-page',
@@ -37,7 +37,7 @@ export class MainPage {
   }
 
   openDetails(entity: any) {
-    this.nav.push(DetailsComponent, { item: entity });
+    this.nav.push(EntityDetails);
   }
 
 }

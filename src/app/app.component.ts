@@ -7,11 +7,14 @@ import { LoginPage } from './views/login/Login';
 
 @Component({
   template: `
-    <div style="width:100%; height:100%; background-image:url('http://npsapps.com/wp-content/uploads/2015/09/slider1-bg.png'); background-repeat: no-repeat;">
+    <div style="width:100%; height:100%; ">
       <ion-nav [root]="rootPage"></ion-nav>
     </div>
   `
 })
+
+// background-image:url('http://npsapps.com/wp-content/uploads/2015/09/slider1-bg.png'); background-repeat: no-repeat;
+
 export class MyApp {
   private rootPage:any;
 
